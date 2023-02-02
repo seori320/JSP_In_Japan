@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<html lang="ko">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+		   <title>sample1</title>
+    <style type="text/css">
+		*{
+			font-family:MS UI Gothic;
+				font-size: 20px;
+		}
+		input[type="text"],input[type="password"]{
+			width:286px; height:25px;
+			border:3px;
+			font-size:20px; 
+		}
+		.btn-open {
+		  display: inline-block;
+		  width: 85px;
+		  height:35px;
+		  text-align: center;
+		  background-color: #DDDDDD;
+		  font-size: 20px;
+		  line-height: 37px;
+		  color: #000;
+		  text-decoration: none;
+		  font-weight: bold;
+		  border: 2px solid #DDDDDD;
+
+		  overflow: hidden;
+		  z-index: 1;
+		}
+		.btn-open:after{
+		  width: 100%;
+		  height: 0;
+		  content:"";
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  background : #FFF;
+		  opacity: 0;
+		  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+		  transition: .2s;
+		  z-index: -1;
+		}
+		.btn-open:hover{
+		  color: #DDDDDD;
+		}
+		.btn-open:hover:after{
+		  height: 240%;
+		  opacity: 1;
+		}
+		.btn-open:active:after{
+		  height: 340%;
+		  opacity: 1;
+		}
+
+    </style>
+	</head>
+	<body>
+		<div style="width:1144px;height:691px;">
+			<span style="position:absolute; top:92px; left:36px; color:#000000; font:20px ">
+				1.
+			</span>
+			<span style="position:absolute; top:92px; left:50px; color:#000000; font:20px">
+				고객 정보
+			</span>
+			<span style="position:absolute; top:82px; left:1074px; color:#000000; font:20px">
+				<a href="#" class="btn-open" style="position: relative; bottom: 10px;right:20px;">처리</a>
+			</span>
+			<span style="position:absolute; top:129px; left:64px; color:#000000; font:20px">
+			  카드 번호
+			</span>
+			<span style="position:absolute; top:105px; left:205px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:167px; left:76px; color:#000000; font:20px ">
+				이름
+			</span>
+			<span style="position:absolute; top:143px; left:205px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:167px; left:122px; color:#000000; font:20px">
+				
+			</span>
+			<span style="position:absolute; top:204px; left:76px; color:#000000; font:20px">
+				성별
+			</span>
+			<span style="position:absolute; top:204px; left:122px; color:#000000; font:20px">
+				
+			</span>
+			<span style="position:absolute; top:242px; left:76px; color:#000000; font:20px">
+				거주지
+			</span>
+			<span style="position:absolute; top:217px; left:205px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:167px; left:629px; color:#000000; font:20px">
+				가타카나
+			</span>
+			<span style="position:absolute; top:141px; left:757px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:129px; left:622px; color:#000000; font:20px">
+				생년월일
+			</span>
+			<span style="position:absolute; top:105px; left:757px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:204px; left:626px; color:#000000; font:20px">
+				발생일
+			</span>
+			<span style="position:absolute; top:180px; left:757px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:242px; left:622px; color:#000000; font:20px ">
+				발생금액
+			</span>
+			<span style="position:absolute; top:216px; left:757px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:183px; left:211px; color:#000000; font:30px">
+				<p><input  type="radio"name="" value="男" size="">남
+				   <input  type="radio"name="" value="女" size="">여</p>
+			</span>
+			<span style="position:absolute; top:363px; left:36px; color:#000000; font:20px ">
+				2.
+			</span>
+			<span style="position:absolute; top:363px; left:50px; color:#000000; font:20px ">
+				카드 정보
+			</span>
+			<span style="position:absolute; top:401px; left:64px; color:#000000; font:20px ">
+				카드 회사
+			</span>
+			<span style="position:absolute; top:438px; left:73px; color:#000000; font:20px ">
+				입회일
+			</span>
+			<span style="position:absolute; top:414px; left:205px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:438px; left:125px; color:#000000; font:20px ">
+				
+			</span>
+			<span style="position:absolute; top:474px; left:69px; color:#000000; font:20px ">
+				연체요부
+			</span>
+			<span style="position:absolute; top:510px; left:69px; color:#000000; font:20px ">
+				발행지점
+			</span>
+			<span style="position:absolute; top:489px; left:205px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:438px; left:626px; color:#000000; font:20px ">
+				탈퇴일
+			</span>
+			<span style="position:absolute; top:412px; left:757px; color:#000000; font:30px ">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:401px; left:607px; color:#000000; font:20px ">
+				카드 한도금
+			</span>
+			<span style="position:absolute; top:376px; left:757px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:476px; left:626px; color:#000000; font:20px ">
+				발행일
+			</span>
+			<span style="position:absolute; top:451px; left:757px; color:#000000; font:30px ">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:476px; left:678px; color:#000000; font:20px ">
+				
+			</span>
+			<span style="position:absolute; top:513px; left:622px; color:#000000; font:20px ">
+				발행 담당
+			</span>
+			<span style="position:absolute; top:487px; left:757px; color:#000000; font:30px ">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:455px; left:211px; color:#000000; font:30px ">
+				<p><input  type="radio"name="" value="有" size="">유
+				   <input  type="radio"name="" value="無" size="">무</p>
+			</span>
+			<span style="position:absolute; top:380px; left:211px; color:#000000; font:30px">
+				<p><input  type="radio"name="" value="VISA" size="">VISA　&nbsp;
+				   <input  type="radio"name="" value="MASTER" size="">MASTER</p>
+			</span>
+			<span style="position:absolute; top:279px; left:48px; color:#000000; font:20px ">
+				이메일 주소
+			</span>
+			<span style="position:absolute; top:255px; left:205px; color:#000000; font:30px ">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:279px; left:613px; color:#000000; font:18px ">
+				주소 확인
+			</span>
+			<span style="position:absolute; top:255px; left:757px; color:#000000; font:30px">
+				<p><input type="text" name="" value="" size=""></p>
+			</span>
+			<span style="position:absolute; top:570px; left:36px; color:#000000; font:20px ">
+				<a href="#" class="btn-open" style="position: relative; bottom: 10px;right:20px;">메뉴</a>
+			</span>
+			<span style="position:absolute; top:570px; left:149px; color:#000000; font:20px">
+				<a href="#" class="btn-open" style="position: relative; bottom: 10px;right:20px;">클리어</a>
+			</span>
+			<span style="position:absolute; top:11px; left:27px; color:#000000; font:30px">
+				고객 정보 등록
+			</span>
+		</div>
+	</body>
+</html>

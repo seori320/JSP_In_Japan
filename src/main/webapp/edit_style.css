@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+	color: #D2D1D5;
+
+	}
+	
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	background: #1E1930;
+	color: #D2D1D5;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	
+}
+
+/*span input{*/
+/*	background-color: transparent;*/
+/*	border: none;*/
+/*	border-bottom: 1px solid #999;*/
+/*	font-size: 18px;*/
+/*	color: #fff;*/
+/*	outline: none;*/
+/*	margin-bottom: 20px;*/
+/*}*/
+
+/*span input{*/
+/*	background-color: transparent;*/
+/*	padding: 10px 20px;*/
+/*	margin: 10px;*/
+/*	outline: none;*/
+/*	border: 5px solid #0298cf;*/
+/*	border-radius: 6px;*/
+/*	color: #0298cf;*/
+/*	border: 2px solid#d5d0d0;*/
+/*}*/
+
+/*span #span3 {*/
+/*	width: 100px; height: 20px;*/
+/*	border: 1px solid; padding: 5px;*/
+/*	margin: 10px;*/
+/*}*/
+
+
+/*edit.jsp*/
+
+.h2{
+	color: #fff;
+}
+	.edit input{
+		background-color: transparent;
+		width:286px; height:25px;
+		padding: 10px 20px;
+		margin: 10px;
+		outline: none;
+		border: 1px solid #D2D1D5;
+		border-radius: 6px;
+/*		color: #0298cf;*/
+		
+	}
+
+	input[type="text"],input[type="password"]{
+			width:286px; height:35px;
+			font-size:20px; 
+		}
+	
+	.btn_signup button {
+		margin-left: 1200px;
+		margin-top: 30px;
+		width: 100px;
+		height: 50px;
+		outline: none;
+		border: none;
+		border-radius: 6px;
+		cursor: pointer;
+		padding: 10px;
+		color: #fff;
+		background-color: #166cea;
+		font-size: 22px; 
+}

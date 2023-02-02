@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<form-beans>
+		<form-bean name="LoginForm" type="test.form.LoginForm" />
+	</form-beans>
+	<form-beans>
+		<form-bean name="GuestForm" type="test.form.GuestForm" />
+	</form-beans>
+
+	<global-forwards>
+		<forward name="welcome" path="/Welcome.do" />
+	</global-forwards>
+
+	<action-mappings>
+		<action path="/Test" input="/login.jsp" name="GuestForm"
+			scope="session" type="test.action.LoginAction">
+			<forward name="success" path="/Guest.do" />
+			<forward name="error" path="/login.jsp" />
+		</action>
+
+		<action path="/Guest" input="/guest.jsp" name="GuestForm"
+			scope="session" type="test.action.GuestAction">
+			<forward name="guest" path="/guest.jsp" />
+		</action>
+
+		<action path="/Search" input="/guest.jsp" name="GuestForm"
+			scope="session" type="test.action.SearchAction">
+			<forward name="guest" path="/guest.jsp" />
+		</action>
+
+		<action path="/Edit" input="/edit.jsp" name="GuestForm"
+			scope="session" type="test.action.EditAction">
+			<forward name="edit" path="/edit.jsp" />
+		</action>
+	</action-mappings>
+
+
+	<message-resources
+		parameter="src/main/java/resources/ApplicationResource" />
+
+</struts-config>
